@@ -7,29 +7,29 @@
 
 import UIKit
 
-class GithubAPI: APIProtocol {
+public class GithubAPI: APIProtocol {
     
     // MARK: - Internal properties
     
     static let shared: GithubAPI = GithubAPI()
     
-    var session: URLSession {
+    public var session: URLSession {
         return URLSession.shared
     }
     
-    var url: URL {
+    public var url: URL {
         return URL(string: "https://api.github.com")!
     }
     
-    init(){  }
+    public init(){  }
     
-    func getUsers(completionHandler: @escaping (Result<[GithubUser], NetworkError>) -> Void) {
+    public func getUsers(completionHandler: @escaping (Result<[GithubUser], NetworkError>) -> Void) {
         getObjects(parameters:nil,
                                 path: "/users",
                                 completionHandler: completionHandler)
     }
     
-    func getDetails(id: String, completionHandler: @escaping (Result<GithubUserDetails, NetworkError>) -> Void) {
+    public func getDetails(id: String, completionHandler: @escaping (Result<GithubUserDetails, NetworkError>) -> Void) {
         getObject(parameters:nil,
                                 path: "/users/\(id)",
                                 completionHandler: completionHandler)

@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-enum NetworkError: Error {
+public enum NetworkError: Error {
     case noData
     case urlError
     case error(Error)
     case parsing(Error?)
 }
 
-protocol APIProtocol:class {
+public protocol APIProtocol:class {
     var session: URLSession { get }
     var url: URL { get }
     func downloadImage(url: String, completionHandler: @escaping (Result<UIImage, NetworkError>) -> Void)->URLSessionDataTask?
@@ -28,7 +28,7 @@ protocol APIProtocol:class {
 }
 
 extension APIProtocol {
-    func getObject<T: Codable>(parameters:[String:Any]?,
+    public func getObject<T: Codable>(parameters:[String:Any]?,
                                path: String,
                                completionHandler: @escaping (Result<T, NetworkError>) -> Void) {
         let baseUrl = url.appendingPathComponent(path)
@@ -61,7 +61,7 @@ extension APIProtocol {
         task.resume()
     }
     
-    func getObjects<T: Codable>(parameters:[String:Any]?,
+    public func getObjects<T: Codable>(parameters:[String:Any]?,
                                 path: String,
                                 completionHandler: @escaping (Result<[T], NetworkError>) -> Void) {
         let baseUrl = self.url.appendingPathComponent(path)
@@ -96,7 +96,7 @@ extension APIProtocol {
         task.resume()
     }
     
-    func downloadImage(url: String, completionHandler: @escaping (Result<UIImage, NetworkError>) -> Void)->URLSessionDataTask? {
+    public func downloadImage(url: String, completionHandler: @escaping (Result<UIImage, NetworkError>) -> Void)->URLSessionDataTask? {
         guard let url = URL(string: url) else {
             completionHandler(.failure(.urlError))
             return nil

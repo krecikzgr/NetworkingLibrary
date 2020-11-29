@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct GetDailymotionUsersResponse: Codable {
-    let page, limit: Int?
-    let explicit: Bool?
-    let total: Int?
-    let hasMore: Bool?
-    let list: [DailymotionUser]?
+public struct GetDailymotionUsersResponse: Codable {
+    public let page, limit: Int?
+    public let explicit: Bool?
+    public let total: Int?
+    public let hasMore: Bool?
+    public let list: [DailymotionUser]?
     
     enum CodingKeys: String, CodingKey {
         case page, limit, explicit, total

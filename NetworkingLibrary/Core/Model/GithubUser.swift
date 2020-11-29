@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct GithubUser: Codable {
-    var login: String?
-    var avatarUrl: String?
+public struct GithubUser: Codable {
+    public var login: String?
+    public var avatarUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case login

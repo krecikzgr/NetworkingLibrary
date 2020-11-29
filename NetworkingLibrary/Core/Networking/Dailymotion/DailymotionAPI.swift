@@ -7,20 +7,19 @@
 
 import Foundation
 
-
-class DailymotionAPI: APIProtocol {
+public class DailymotionAPI: APIProtocol {
     
     // MARK: - Internal properties
     
-    var session: URLSession {
+    public var session: URLSession {
         return URLSession.shared
     }
     
-    var url: URL {
+    public var url: URL {
         return URL(string: "https://api.dailymotion.com")!
     }
     
-    init(){  }
+    public init(){  }
     
     
     private struct Consts {
@@ -35,7 +34,7 @@ class DailymotionAPI: APIProtocol {
         }
     }
     
-    func getUsers(completionHandler: @escaping (Result<GetDailymotionUsersResponse, NetworkError>) -> Void) {
+    public func getUsers(completionHandler: @escaping (Result<GetDailymotionUsersResponse, NetworkError>) -> Void) {
         var parameters: [String:Any] = [:]
         parameters[Consts.GetUsers.fields] = Consts.GetUsers.fieldsValue
         getObject(parameters:parameters,
@@ -43,7 +42,7 @@ class DailymotionAPI: APIProtocol {
                                 completionHandler: completionHandler)
     }
     
-    func getDetails(id: String, completionHandler: @escaping (Result<DailymotionUserDetails, NetworkError>) -> Void) {
+    public func getDetails(id: String, completionHandler: @escaping (Result<DailymotionUserDetails, NetworkError>) -> Void) {
         var parameters: [String:Any] = [:]
         parameters[Consts.GetUserDetails.fields] = Consts.GetUserDetails.fieldsValue
         getObject(parameters:parameters,

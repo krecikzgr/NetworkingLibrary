@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct DailymotionUser: Codable {
-    var login: String?
-    var avatarUrl: String?
+public struct DailymotionUser: Codable {
+    public var login: String?
+    public var avatarUrl: String?
 
     enum CodingKeys: String, CodingKey {
         case login = "username"
