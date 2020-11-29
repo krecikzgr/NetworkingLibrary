@@ -88,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				7F53F71D2574292500C82856 /* Core */,
-				7F52BD6825741EFF00087D04 /* NetworkingLibrary.h */,
 				7F52BD6925741EFF00087D04 /* Info.plist */,
 			);
 			path = NetworkingLibrary;
@@ -152,6 +151,7 @@
 		7F53F71D2574292500C82856 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7F52BD6825741EFF00087D04 /* NetworkingLibrary.h */,
 				7F52BDAC257422FF00087D04 /* Model */,
 				7F52BD9E257422F600087D04 /* Networking */,
 			);
