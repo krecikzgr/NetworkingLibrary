@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Adrian Kaleta' => 'kaleciarz@gmail.com' }
   s.source           = { :git => 'https://github.com/krecikzgr/NetworkingLibrary.git', :tag => s.version.to_s }
-  s.source_files     = 'NetworkingLibrary/**/*'
+  s.source_files     = 'NetworkingLibrary/Core/**/*'
 
 
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
