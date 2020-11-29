@@ -10,6 +10,14 @@
 		7F52BD6F25741EFF00087D04 /* NetworkingLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F52BD6525741EFF00087D04 /* NetworkingLibrary.framework */; };
 		7F52BD7425741EFF00087D04 /* NetworkingLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD7325741EFF00087D04 /* NetworkingLibraryTests.swift */; };
 		7F52BD7625741EFF00087D04 /* NetworkingLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F52BD6825741EFF00087D04 /* NetworkingLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F52BD87257421B500087D04 /* GithubUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD82257421B500087D04 /* GithubUserDetails.swift */; };
+		7F52BD88257421B500087D04 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD83257421B500087D04 /* GithubUser.swift */; };
+		7F52BD89257421B500087D04 /* GetDailymotionUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD84257421B500087D04 /* GetDailymotionUsersResponse.swift */; };
+		7F52BD8A257421B500087D04 /* DailymotionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD85257421B500087D04 /* DailymotionUser.swift */; };
+		7F52BD8B257421B500087D04 /* DailymotionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD86257421B500087D04 /* DailymotionUserDetails.swift */; };
+		7F52BD95257421C600087D04 /* DailymotionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD90257421C600087D04 /* DailymotionAPI.swift */; };
+		7F52BD96257421C600087D04 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD92257421C600087D04 /* GithubAPI.swift */; };
+		7F52BD97257421C600087D04 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52BD94257421C600087D04 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		7F52BD6E25741EFF00087D04 /* NetworkingLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F52BD7325741EFF00087D04 /* NetworkingLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLibraryTests.swift; sourceTree = "<group>"; };
 		7F52BD7525741EFF00087D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F52BD82257421B500087D04 /* GithubUserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserDetails.swift; sourceTree = "<group>"; };
+		7F52BD83257421B500087D04 /* GithubUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		7F52BD84257421B500087D04 /* GetDailymotionUsersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersResponse.swift; sourceTree = "<group>"; };
+		7F52BD85257421B500087D04 /* DailymotionUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailymotionUser.swift; sourceTree = "<group>"; };
+		7F52BD86257421B500087D04 /* DailymotionUserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailymotionUserDetails.swift; sourceTree = "<group>"; };
+		7F52BD90257421C600087D04 /* DailymotionAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailymotionAPI.swift; sourceTree = "<group>"; };
+		7F52BD92257421C600087D04 /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		7F52BD94257421C600087D04 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,8 @@
 		7F52BD6725741EFF00087D04 /* NetworkingLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				7F52BD8E257421C600087D04 /* Networking */,
+				7F52BD81257421B500087D04 /* Network */,
 				7F52BD6825741EFF00087D04 /* NetworkingLibrary.h */,
 				7F52BD6925741EFF00087D04 /* Info.plist */,
 			);
@@ -84,6 +102,54 @@
 				7F52BD7525741EFF00087D04 /* Info.plist */,
 			);
 			path = NetworkingLibraryTests;
+			sourceTree = "<group>";
+		};
+		7F52BD81257421B500087D04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F52BD82257421B500087D04 /* GithubUserDetails.swift */,
+				7F52BD83257421B500087D04 /* GithubUser.swift */,
+				7F52BD84257421B500087D04 /* GetDailymotionUsersResponse.swift */,
+				7F52BD85257421B500087D04 /* DailymotionUser.swift */,
+				7F52BD86257421B500087D04 /* DailymotionUserDetails.swift */,
+			);
+			name = Network;
+			path = ../../../FinanteqRekrutacja/UserList/Model/Network;
+			sourceTree = "<group>";
+		};
+		7F52BD8E257421C600087D04 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F52BD8F257421C600087D04 /* Dailymotion */,
+				7F52BD91257421C600087D04 /* Github */,
+				7F52BD93257421C600087D04 /* API */,
+			);
+			name = Networking;
+			path = ../../../FinanteqRekrutacja/UserList/Networking;
+			sourceTree = "<group>";
+		};
+		7F52BD8F257421C600087D04 /* Dailymotion */ = {
+			isa = PBXGroup;
+			children = (
+				7F52BD90257421C600087D04 /* DailymotionAPI.swift */,
+			);
+			path = Dailymotion;
+			sourceTree = "<group>";
+		};
+		7F52BD91257421C600087D04 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				7F52BD92257421C600087D04 /* GithubAPI.swift */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		7F52BD93257421C600087D04 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7F52BD94257421C600087D04 /* API.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F52BD95257421C600087D04 /* DailymotionAPI.swift in Sources */,
+				7F52BD8A257421B500087D04 /* DailymotionUser.swift in Sources */,
+				7F52BD8B257421B500087D04 /* DailymotionUserDetails.swift in Sources */,
+				7F52BD87257421B500087D04 /* GithubUserDetails.swift in Sources */,
+				7F52BD89257421B500087D04 /* GetDailymotionUsersResponse.swift in Sources */,
+				7F52BD96257421C600087D04 /* GithubAPI.swift in Sources */,
+				7F52BD97257421C600087D04 /* API.swift in Sources */,
+				7F52BD88257421B500087D04 /* GithubUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +461,7 @@
 		7F52BD7D25741EFF00087D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkingLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +479,7 @@
 		7F52BD7E25741EFF00087D04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkingLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
